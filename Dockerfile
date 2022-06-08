@@ -36,7 +36,7 @@ RUN apt-get update && \
     ln -fs /usr/share/zoneinfo/Asia/Kolkata /etc/localtime && \
     dpkg-reconfigure -f noninteractive tzdata
 
-ENV TZ="Asia/Kolkata"
+ENV TZ="America/Chicago"
 # setup ubuntu
 RUN apt-get update -y \
     && apt-get upgrade -y \
